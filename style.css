@@ -1,0 +1,123 @@
+*{
+	box-sizing: border-box;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+body {
+	background-image: url(images/patt.png);
+	font-family: 'Roboto', sans-serif;
+}
+.header{
+	padding: 25px 0;
+	background-color: rgba(255,255,255,0.75);
+}
+[class*="col-"] {
+	float: left;
+}
+.col-md-3{
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.col-md-6{
+	width: 50%;
+}
+.row:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.menu li{
+	width: 25%;
+	float: left;
+	border-right: 1px solid #2c70b7;
+}
+.menu li:first-child {
+	border-left: 1px solid #2c70b7;
+}
+.menu a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 21px;
+	color: #2c70b7;
+}
+.menu a:hover{
+	background-color: #2c70b7;
+	color: white;
+}
+.logo img{
+	vertical-align: middle;
+}
+.search {
+	position: relative;
+}
+.search .text {
+	width: 200px;
+	height: 40px;
+	font-size: 21px;
+	padding-left: 19px; 
+	border:1px solid #2c70b7;
+	vertical-align: middle;
+}
+.search .button {
+	position: absolute;
+	top: 11px;
+	right: 52px;
+	height: 30px;
+	width: 30px;
+	background-color: #2c70b7;
+	border: none;
+	line-height: 50px;
+	vertical-align: middle;
+	padding-right: 20px;
+	background-image: url(images/lope.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+::placeholder {
+	color: #2c70b7;
+}
+.cart{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	text-align: center;
+	line-height: 46px;
+	right: 0px;
+	top: 5px;
+	background-image: url(images/cart.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	border: none;
+}
+.counter {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background-color: #2c72b8;
+	border-radius: 50%;
+	top: -7px;
+	right: 34px;
+	z-index: 1;
+	line-height: 19px;
+	color: white;
+	font-size: 10px;
+}
+/* .loupe {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #2c72b8;
+	text-align: center;
+	line-height: 28px;
+	right: 87px;
+	top: 11px;
+	
+} */
